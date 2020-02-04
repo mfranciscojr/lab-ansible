@@ -8,11 +8,11 @@
       ios_command:
         commands:
           - show run
-          hosts: "{{ ansible_host }}"
-          username: cisco
-          password: cisco
-        register: config
+        hosts: "{{ ansible_host }}"
+        username: cisco
+        password: cisco
+      register: config
       
-     - name: save output to backup folder
-       copy:
+    - name: save output to backup folder
+      copy:
         content: "{{ config.stdout[0] }}"
