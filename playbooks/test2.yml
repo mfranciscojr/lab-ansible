@@ -13,3 +13,4 @@
              - show ip int br
              - show run
              - show ver
+        debug: msg="{{"ansible_net_image"}}"
