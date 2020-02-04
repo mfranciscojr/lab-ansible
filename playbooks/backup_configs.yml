@@ -1,16 +1,6 @@
 ---
-- hosts: cisco_routers
-  gather_facts: no
-  connection: network_cli
-
-  tasks:
-    - name: show run
-      ios_command:
-        commands:
-          - show run
-        hosts: "{{ ansible_host }}"
-      register: config
-      
-    - name: save output to backup folder
-      copy:
-        content: "{{ config.stdout[0] }}"
+- name: Backup current switch config (ios)
+  ios_config:
+    backup: yes
+  register: backup_ios_location
+  when: ansible_network_os == 'ios'
