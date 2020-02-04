@@ -11,3 +11,4 @@
         ios_command:
           commands: show ip int br
           register: stndout
+          debug: stndout
