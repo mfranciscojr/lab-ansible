@@ -1,0 +1,7 @@
+---
+  - name: retrive facts from server
+    hosts: cisco
+
+    tasks:
+      - name: Device Hostname
+        debug: msg="{{ansible_hostname}}"
