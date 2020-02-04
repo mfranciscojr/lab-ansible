@@ -1,6 +1,8 @@
 ---
- - name: Run IOS Command
-   ios_command:
-    commands: show run
-    backup: yes
-   when: ansible_network_os == 'ios'
+  - name: RUN IOS COMMAND
+    host: cisco
+    gather_facts: yes
+
+    task: backup device configuration
+    ios_config:
+      backup: yes
