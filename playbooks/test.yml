@@ -1,6 +1,6 @@
 ---
 - name: Backup Cisco Configs
-  ios_command:
+  ios_config:
     commands:
       - show run
       - show ip int br
