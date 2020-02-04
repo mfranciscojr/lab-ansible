@@ -1,7 +1,6 @@
 ---
- - name: Backup current switch config (ios)
-   ios_command:
-     backup: yes
-     commands: show run
-   register: backup_ios_location
-   when: ansible_network_os == 'ios'
+- name: Run IOS Command
+  ios_command:
+    commands: show run
+    backup: yes
+  when: ansible_network_os == 'ios'
