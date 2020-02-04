@@ -10,7 +10,6 @@
           - show run
         hosts: "{{ ansible_host }}"
         username: cisco
-        password: cisco
       register: config
       
     - name: save output to backup folder
