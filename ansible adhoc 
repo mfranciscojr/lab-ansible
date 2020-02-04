@@ -1,0 +1,1 @@
+ansible all -i lab-r1, -c network_cli -u cisco -k -m ios_facts -e ansible_network_os=ios
