@@ -1,10 +1,5 @@
 [all]
 
-[cisco]
-cisco_routers
-cisco_switch
-cisco_coreswitch
-
 [cisco_routers]
 lab-r1
 lab-r2
