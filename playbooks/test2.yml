@@ -6,3 +6,6 @@
     tasks:
       - name: Device Hostname
         debug: msg="{{"ansible_hostname"}}"
+
+      - name: get running config
+        command: show ip int br
