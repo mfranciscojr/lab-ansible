@@ -1,5 +1,5 @@
 ---
-- hosts: cisco_routers
+- hosts: lab-r1
   gather_facts: true
   connection: network_cli
 
