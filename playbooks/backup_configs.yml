@@ -2,6 +2,7 @@
 - hosts: lab-r1
   gather_facts: true
   connection: network_cli
+  ansible_network_os: ios
 
   tasks:
     - name: show run
