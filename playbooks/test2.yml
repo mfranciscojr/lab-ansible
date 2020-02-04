@@ -9,4 +9,4 @@
 
       - name: get running config
         ios_command:
-          command: show ip int br
+          commands: show ip int br
