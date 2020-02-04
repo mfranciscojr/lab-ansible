@@ -1,6 +1,14 @@
 ---
-- name: Backup Cisco Configs
-  ios_config:
-    commands:
-      - show run
-      - show ip int br
+- name: show ios commands
+  hosts: cisco
+  gather_facts: false
+
+  vars:
+    cli:
+      host: "{{ ansible_host }}"
+  
+  tasks:
+     ios_command:
+     command:
+       - show run
+       - show ip int br
