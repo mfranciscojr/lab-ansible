@@ -10,3 +10,4 @@
       - name: get running config
         ios_command:
           commands: show ip int br
+          register: stndout
