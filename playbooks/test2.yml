@@ -14,5 +14,5 @@
              - show run
              - show version
            wait_for:
-             - result[0] contains flash
+             - result[0] contains line
              - result[1] contains username
