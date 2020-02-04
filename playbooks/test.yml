@@ -1,14 +1,24 @@
 ---
-- name: show ios commands
-  hosts: cisco
-  gather_facts: false
+  - item1
+  - item2
+  - item3
+  - item4
 
-  vars:
-    cli:
-      host: "{{ ansible_host }}"
-  
-  tasks:
-     ios_command:
-     command:
-       - show run
-       - show ip int br
+---
+  - item5
+  - item6
+  - item7
+  - item8
+
+---
+  key1: value1
+  key2: value2
+
+---
+  key1:
+    key-a: valuea
+    key-b: valueb
+  key2:
+    key-c: valuec
+  key4:
+    key-d: valued
