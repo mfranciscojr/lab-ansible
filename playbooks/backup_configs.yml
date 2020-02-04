@@ -1,6 +1,6 @@
 ---
-- name: Run IOS Command
-  ios_command:
+ - name: Run IOS Command
+   ios_command:
     commands: show run
     backup: yes
-  when: ansible_network_os == 'ios'
+   when: ansible_network_os == 'ios'
