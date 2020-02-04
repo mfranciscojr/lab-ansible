@@ -1,8 +1,7 @@
 ---
 - hosts: lab-r1
-  gather_facts: true
+  gather_facts: no
   connection: network_cli
-  ansible_network_os: ios
 
   tasks:
     - name: show run
@@ -12,6 +11,7 @@
         hosts: "{{ ansible_host }}"
         username: cisco
         password: cisco
+        when: ansible_network_os == ios
       register: config
       
     - name: save output to backup folder
