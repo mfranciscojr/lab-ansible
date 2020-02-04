@@ -3,6 +3,7 @@
     host: cisco
     gather_facts: yes
 
-    task: backup device configuration
-    ios_config:
-      backup: yes
+    tasks: 
+    - name: get configs     
+      ios_config:
+        backup: yes
