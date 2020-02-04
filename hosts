@@ -1,12 +1,12 @@
 [all]
 
 [cisco_routers]
-lab-r1 ansible_network_os: ios
-lab-r2 ansible_network_os: ios
-lab-r3 ansible_network_os: ios
+lab-r1 ansible_network_os=ios
+lab-r2 ansible_network_os=ios
+lab-r3 ansible_network_os=ios
 
 [cisco_routers:vars]
-ansible_network_os: ios
+ansible_network_os=ios
 
 [cisco_coreswitch]
 lab-coresw
