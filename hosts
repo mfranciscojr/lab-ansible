@@ -18,10 +18,10 @@ lab-r1
 lab-coresw
 lab-access1
 
-[remote-office-manila]
+[remote_office_manila]
 lab-r2
 lab-remote-sw1
 
-[remote-office-cebu]
+[remote_office_cebu]
 lab-r3
 lab-remote-sw2
