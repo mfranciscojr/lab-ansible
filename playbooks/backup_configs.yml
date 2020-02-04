@@ -1,5 +1,5 @@
 ---
-- hosts: all
+- hosts: cisco_routers
   gather_facts: true
   connection: network_cli
 
