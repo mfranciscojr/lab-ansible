@@ -8,7 +8,7 @@
         debug: msg="{{"ansible_hostname"}}"
 
       - name: get running config
-        ios_command:
-          commands: show ip int br
+         ios_command:
+           commands: show ip int br
         register: stndout
         debug: stndout
