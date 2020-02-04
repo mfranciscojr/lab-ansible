@@ -6,7 +6,7 @@ lab-r2
 lab-r3
 
 [cisco_routers:vars]
-ansible_network_os: io
+ansible_network_os: ios
 
 [cisco_coreswitch]
 lab-coresw
