@@ -1,7 +1,8 @@
 ---
   - name: retrive facts from server
     hosts: cisco
+    gather_facts: yes
 
     tasks:
       - name: Device Hostname
-        debug: msg="{{ansible_hostname}}"
+        debug: msg="{{"ansible_hostname"}}"
