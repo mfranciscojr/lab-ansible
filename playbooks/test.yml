@@ -1,6 +1,6 @@
 ---
-- name: TEST
-  gather_facts: yes
+- name: Backup Cisco Configs
   ios_command:
-    commands: show ip int br
-  when: ansible_network_os == 'ios'
+    commands:
+      - show run
+      - show ip int br
