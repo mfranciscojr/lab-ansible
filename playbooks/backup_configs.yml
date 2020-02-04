@@ -1,9 +1,9 @@
 ---
-  - name: RUN IOS COMMAND
-    host: cisco
+  - name: retrive facts from server
+    hosts: cisco
     gather_facts: yes
 
-    tasks: 
-    - name: get configs     
-      ios_config:
-        backup: yes
+    tasks:
+      - name: get running config
+        ios_config:
+           backup: yes
