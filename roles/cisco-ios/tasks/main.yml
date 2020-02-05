@@ -3,6 +3,5 @@
 - name: backup cisco config
   ios_config:
     backup: yes
-    dir_path: ~/backup/cisco-ios
-    running_config: 
-  
+    backup_options:
+      dir_path: ~/backup/cisco-ios
