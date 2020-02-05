@@ -1,10 +1,5 @@
 [all]
 
-[cisco:children]
-cisco_routers
-cisco_coreswitch
-cisco_switch
-
 [cisco:vars]
 ansible_network_os=ios
 ansible_connection=network_cli
@@ -42,3 +37,8 @@ lab-remote-sw1
 [remote_office_cebu]
 lab-r3
 lab-remote-sw2
+
+[cisco:children]
+cisco_routers
+cisco_coreswitch
+cisco_switch
