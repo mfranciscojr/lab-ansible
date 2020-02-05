@@ -1,2 +1,5 @@
 ---
 # tasks file for cisco-ios
+- name: backup cisco config
+  ios_config:
+    backup: yes

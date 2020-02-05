@@ -1,0 +1,6 @@
+---
+  - name: retrive facts from server
+    hosts: cisco
+    gather_facts: no
+    roles:
+      - cisco-ios
