@@ -5,3 +5,8 @@
     backup: yes
     backup_options:
       dir_path: ./backup
+
+- name: check device hostname
+  ios_command:
+    command:
+      - show ip int br
