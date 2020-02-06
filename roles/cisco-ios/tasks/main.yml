@@ -10,6 +10,6 @@
   ios_command:
     commands: show ip int br
     wait_for: result[0] contains up
-    register: up
+  register: up
 
 - debug: var=up.stdout_lines
