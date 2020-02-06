@@ -4,4 +4,4 @@
   ios_config:
     backup: yes
     backup_options:
-      dir_path: ~/backup/cisco-ios
+      dir_path: ./backup
