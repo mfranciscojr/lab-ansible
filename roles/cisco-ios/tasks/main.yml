@@ -6,7 +6,7 @@
     backup_options:
       dir_path: ./backup
 
-- name: check device hostname
+- name: check device interface status
   ios_command:
-    command:
-      - show ip int br
+    commands: show ip int br
+    wait_for: result[0] contains up
