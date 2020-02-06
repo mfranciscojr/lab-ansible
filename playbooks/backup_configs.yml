@@ -1,9 +1,0 @@
----
-  - name: retrive facts from server
-    hosts: cisco
-    gather_facts: no
-
-    tasks:
-      - name: get running config
-        ios_config:
-           backup: yes
