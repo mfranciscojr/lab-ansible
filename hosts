@@ -4,7 +4,7 @@
 ansible_network_os=ios
 ansible_connection=network_cli
 ansible_user=cisco
-ansible_password: !vault |
+ansible_password= !vault |
                   $ANSIBLE_VAULT;1.1;AES256
                   61386233313965306162393133393439636130386639346630626434376631373830356363316433
                   6533386365353537396631626666626532363664353335340a313838353766323331373030386562
