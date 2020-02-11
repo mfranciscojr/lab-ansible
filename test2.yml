@@ -1,4 +1,4 @@
----
+----
   - name: retrive facts from server
     hosts: cisco
     gather_facts: yes
